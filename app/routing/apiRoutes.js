@@ -1,10 +1,8 @@
-// includes data from friends.js
 var friendDatas = require("../data/friends");
 
 var express = require("express");
 var app = module.exports = express();
 
-module.exports = function (app) {
 
 app.get("/api/friends", function (req, res) {
   res.json(friendData);
@@ -20,6 +18,7 @@ app.post("/api/friends", function (req, res) {
   for (var i = 0; i < newFriend.answers.length; i++){
     newFriend.answers[i] = parseInt(newFriend.answers[i]);
   }
+
 
   var friendScoreDifferences = [];
 
@@ -48,4 +47,3 @@ app.post("/api/friends", function (req, res) {
 
 });
 
-};
