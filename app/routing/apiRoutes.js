@@ -2,6 +2,7 @@ var friendDatas = require("../data/friends");
 var express = require("express");
 var app = module.exports = express();
 
+module.exports = function (app) {
 
 app.get("/api/friends", function (req, res) {
   res.json(friendData);
