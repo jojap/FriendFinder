@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/jojap/FriendFinder/issues"
   },
-  "homepage": "https://github.com/jojap/FriendFinder#readme"
+  "homepage": "https://github.com/jojap/FriendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
 }
